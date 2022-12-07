@@ -37,7 +37,7 @@ const Withdraw = () => {
     }, [])
 
     return (
-        <div style={{ height: 700, width: '100%' }}>
+        <div style={{ height: 700, width: '90%', margin: '0 auto' }}>
             <DataGrid
                 getRowId={(row) => row.id}
                 rows={tableData}
@@ -52,6 +52,7 @@ const Withdraw = () => {
                     '& .super-app-theme--header': {
                         fontSize: '18px'
                     },
+                    border: 0
                 }}
                 components={{ Toolbar: GridToolbar }}
                 componentsProps={{
